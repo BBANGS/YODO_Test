@@ -1,5 +1,7 @@
 # YODO_Test
 Unity Sample for YODO
+Unity 2021.3.36f1
+Xcode 15
 
 ## Pre Setting for build
 1. Build YODO_SYSINFO xcode project
