@@ -9,6 +9,9 @@ Unity Sample for YODO
 
 2. Build And Run Unity Project
 
+## Description
+1. SYS INFO works 60fps by its self timer / but it can be changed other signal.
+
 ## Screen Shot
 1. Stand by
 
