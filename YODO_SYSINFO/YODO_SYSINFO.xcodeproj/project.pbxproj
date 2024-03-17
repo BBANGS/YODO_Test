@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3FA7AE92BA53B4300035957 /* YODO_SYSINFO.docc in Sources */ = {isa = PBXBuildFile; fileRef = B3FA7AE82BA53B4300035957 /* YODO_SYSINFO.docc */; };
+		B3FA7AEA2BA53B4300035957 /* YODO_SYSINFO.h in Headers */ = {isa = PBXBuildFile; fileRef = B3FA7AE72BA53B4300035957 /* YODO_SYSINFO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3FA7AF12BA53C0700035957 /* YODO_SYSINFO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA7AF02BA53C0700035957 /* YODO_SYSINFO.swift */; };
+		B3FA7AF42BA53C2900035957 /* GPUChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = B3FA7AF22BA53C2900035957 /* GPUChecker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3FA7AF52BA53C2900035957 /* GPUChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FA7AF32BA53C2900035957 /* GPUChecker.m */; };
+		B3FA7AF92BA53E1400035957 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FA7AF82BA53E1400035957 /* IOKit.framework */; };
+		B3FA7AFB2BA5445600035957 /* ExposeFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA7AFA2BA5445600035957 /* ExposeFunction.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B3FA7AE42BA53B4300035957 /* YODO_SYSINFO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YODO_SYSINFO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3FA7AE72BA53B4300035957 /* YODO_SYSINFO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YODO_SYSINFO.h; sourceTree = "<group>"; };
+		B3FA7AE82BA53B4300035957 /* YODO_SYSINFO.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = YODO_SYSINFO.docc; sourceTree = "<group>"; };
+		B3FA7AF02BA53C0700035957 /* YODO_SYSINFO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YODO_SYSINFO.swift; sourceTree = "<group>"; };
+		B3FA7AF22BA53C2900035957 /* GPUChecker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUChecker.h; sourceTree = "<group>"; };
+		B3FA7AF32BA53C2900035957 /* GPUChecker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUChecker.m; sourceTree = "<group>"; };
+		B3FA7AF82BA53E1400035957 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		B3FA7AFA2BA5445600035957 /* ExposeFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposeFunction.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3FA7AE12BA53B4300035957 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3FA7AF92BA53E1400035957 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3FA7ADA2BA53B4300035957 = {
+			isa = PBXGroup;
+			children = (
+				B3FA7AE62BA53B4300035957 /* YODO_SYSINFO */,
+				B3FA7AE52BA53B4300035957 /* Products */,
+				B3FA7AF72BA53E1400035957 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B3FA7AE52BA53B4300035957 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3FA7AE42BA53B4300035957 /* YODO_SYSINFO.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3FA7AE62BA53B4300035957 /* YODO_SYSINFO */ = {
+			isa = PBXGroup;
+			children = (
+				B3FA7AE72BA53B4300035957 /* YODO_SYSINFO.h */,
+				B3FA7AE82BA53B4300035957 /* YODO_SYSINFO.docc */,
+				B3FA7AF02BA53C0700035957 /* YODO_SYSINFO.swift */,
+				B3FA7AF22BA53C2900035957 /* GPUChecker.h */,
+				B3FA7AF32BA53C2900035957 /* GPUChecker.m */,
+				B3FA7AFA2BA5445600035957 /* ExposeFunction.swift */,
+			);
+			path = YODO_SYSINFO;
+			sourceTree = "<group>";
+		};
+		B3FA7AF72BA53E1400035957 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3FA7AF82BA53E1400035957 /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B3FA7ADF2BA53B4300035957 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3FA7AEA2BA53B4300035957 /* YODO_SYSINFO.h in Headers */,
+				B3FA7AF42BA53C2900035957 /* GPUChecker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B3FA7AE32BA53B4300035957 /* YODO_SYSINFO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3FA7AED2BA53B4300035957 /* Build configuration list for PBXNativeTarget "YODO_SYSINFO" */;
+			buildPhases = (
+				B3FA7ADF2BA53B4300035957 /* Headers */,
+				B3FA7AE02BA53B4300035957 /* Sources */,
+				B3FA7AE12BA53B4300035957 /* Frameworks */,
+				B3FA7AE22BA53B4300035957 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YODO_SYSINFO;
+			productName = YODO_SYSINFO;
+			productReference = B3FA7AE42BA53B4300035957 /* YODO_SYSINFO.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3FA7ADB2BA53B4300035957 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					B3FA7AE32BA53B4300035957 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+					};
+				};
+			};
+			buildConfigurationList = B3FA7ADE2BA53B4300035957 /* Build configuration list for PBXProject "YODO_SYSINFO" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3FA7ADA2BA53B4300035957;
+			productRefGroup = B3FA7AE52BA53B4300035957 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3FA7AE32BA53B4300035957 /* YODO_SYSINFO */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3FA7AE22BA53B4300035957 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3FA7AE02BA53B4300035957 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3FA7AE92BA53B4300035957 /* YODO_SYSINFO.docc in Sources */,
+				B3FA7AFB2BA5445600035957 /* ExposeFunction.swift in Sources */,
+				B3FA7AF52BA53C2900035957 /* GPUChecker.m in Sources */,
+				B3FA7AF12BA53C0700035957 /* YODO_SYSINFO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B3FA7AEB2BA53B4300035957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "$(PROJECT_DIR)/../Build/";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "YODO_SYSINFO/**";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B3FA7AEC2BA53B4300035957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "$(PROJECT_DIR)/../Build/";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				USER_HEADER_SEARCH_PATHS = "YODO_SYSINFO/**";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B3FA7AEE2BA53B4300035957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = ZG3Z9NY469;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(PROJECT_DIR)/../Build/";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hcjeong.YODO-SYSINFO";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = YODO_SYSINFO;
+			};
+			name = Debug;
+		};
+		B3FA7AEF2BA53B4300035957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = ZG3Z9NY469;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(PROJECT_DIR)/../Build/";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hcjeong.YODO-SYSINFO";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = YODO_SYSINFO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3FA7ADE2BA53B4300035957 /* Build configuration list for PBXProject "YODO_SYSINFO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3FA7AEB2BA53B4300035957 /* Debug */,
+				B3FA7AEC2BA53B4300035957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3FA7AED2BA53B4300035957 /* Build configuration list for PBXNativeTarget "YODO_SYSINFO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3FA7AEE2BA53B4300035957 /* Debug */,
+				B3FA7AEF2BA53B4300035957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3FA7ADB2BA53B4300035957 /* Project object */;
+}
