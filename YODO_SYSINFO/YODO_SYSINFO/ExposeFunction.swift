@@ -8,7 +8,7 @@
 import Foundation
 
 @_cdecl("YODO_SYSINFO_runTracking")
-public func YODO_SYSINFO_runTracking(callback: @escaping (Double, Float, UInt64) -> ()) {
+public func YODO_SYSINFO_runTracking(callback: @convention(c) @escaping (Double, Float, Int) -> Void) {
     YODO_SYSINFO.runTracking(callback: callback)
 }
 

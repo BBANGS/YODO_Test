@@ -9,19 +9,18 @@ import Foundation
 
 public struct YODO_SYSINFO {
     static var sys_inst:SysInfo? = nil
-    static var handler: [(Double, Float, UInt64)->()] = []
+    static var onCallback: ((Double, Float, Int)->Void)? = nil
     static var calltimer: Timer? = nil
     
-    static func runTracking(callback: @escaping (Double, Float, UInt64) -> ()) {
+    static func runTracking(callback: @convention(c) @escaping (Double, Float, Int) -> Void) {
         sys_inst = SysInfo()
-        handler.removeAll()
-        handler.append(callback)
-        if calltimer != nil {
-            calltimer = Timer.scheduledTimer(withTimeInterval: 1.60, repeats: true) { timer in
+        onCallback = callback
+        if calltimer == nil {
+            calltimer = Timer.scheduledTimer(withTimeInterval: 1.0/60.0, repeats: true) { timer in
                 let cpuusage:Double = (sys_inst?.cpuUsage())!
                 let gpuusage:Float = (sys_inst?.gpuUsage())!
                 let memusage = sys_inst?.memoryUsage()
-                handler[0](cpuusage, gpuusage, memusage!.0)
+                onCallback!(cpuusage, gpuusage, memusage!.0)
             }
         }
     }
@@ -29,6 +28,7 @@ public struct YODO_SYSINFO {
     static func stopTracking() {
         if calltimer != nil {
             calltimer?.invalidate()
+            calltimer = nil
         }
         sys_inst = nil
     }
@@ -79,7 +79,7 @@ public struct SysInfo {
         return inuse_cpu / total_cpu
     }
 
-    public func memoryUsage() -> (UInt64, UInt64) {
+    public func memoryUsage() -> (Int, Int) {
         var taskInfo = task_vm_info_data_t()
         var count = mach_msg_type_number_t(MemoryLayout<task_vm_info>.size) / 4
         let result: kern_return_t = withUnsafeMutablePointer(to: &taskInfo) {
@@ -88,13 +88,13 @@ public struct SysInfo {
             }
         }
             
-        var used: UInt64 = 0
+        var used: Int = 0
         if result == KERN_SUCCESS {
-            used = UInt64(taskInfo.phys_footprint)
+            used = Int(taskInfo.phys_footprint)
         }
             
         let total = ProcessInfo.processInfo.physicalMemory
-        return (used, total)
+        return (used, Int(total))
     }
     
     public func gpuUsage() -> Float {
