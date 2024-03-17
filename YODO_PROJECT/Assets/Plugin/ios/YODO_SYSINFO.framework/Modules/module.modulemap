@@ -1,0 +1,11 @@
+framework module YODO_SYSINFO {
+  umbrella header "YODO_SYSINFO.h"
+  export *
+
+  module * { export * }
+}
+
+module YODO_SYSINFO.Swift {
+  header "YODO_SYSINFO-Swift.h"
+  requires objc
+}
